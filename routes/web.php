@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('frontend.home');
 });
+
+Route::get('/administrator', function () {
+    return view('admin.blank');
+});
