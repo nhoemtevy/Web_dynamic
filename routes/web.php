@@ -17,10 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function () {
+Route::get('home', function () {
     return view('frontend.home');
 });
 
 Route::get('/administrator', function () {
     return view('admin.blank');
 });
+
+Route::resource('admin/slide' , 'App\Http\Controllers\SlideController');
